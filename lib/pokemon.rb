@@ -21,7 +21,7 @@ class Pokemon
     type = query[2]
     hp = query[3]
     db = query[4]
-    self.new(id: id, name: name, type: type, db: db)
+    self.new(id: id, name: name, type: type, hp: hp, db: db)
 
   end
 end
