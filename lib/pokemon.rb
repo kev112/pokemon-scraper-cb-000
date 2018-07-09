@@ -5,7 +5,9 @@ class Pokemon
     @id = id
     @name = name
     @type = type
+    @hp = hp
     @db  = db
+    
   end
 
   def self.save(name, type, db)
@@ -17,7 +19,8 @@ class Pokemon
     id = query[0]
     name = query[1]
     type = query[2]
-    db = query[3]
+    hp = query[3]
+    db = query[4]
     self.new(id: id, name: name, type: type, db: db)
 
   end
